@@ -87,7 +87,7 @@ input[type=submit]:hover {
     </div>
   </form>
 
-  {% if context['prediction'] %}
+  {% if context['success'] %}
   <div class="row">
     <div class="col-25">
       <label for="subject">Oración: {{ context['text'] }} </label><br>
