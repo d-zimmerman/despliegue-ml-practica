@@ -78,7 +78,13 @@ def model_predict(text_data):
     # Log
     print(json.dumps({
         'text': text_data,
-        'pediction': prediction,
+        'prediction': prediction,
         'score': score
     }))
     return prediction, score
+
+
+def print_error404():
+    print(json.dumps({
+        'error': 404
+    }))
